@@ -23,11 +23,31 @@
     if (self = [super init]) {
         self.delegate = self;
         _curFontSize = 15;
-        
     }
     return self;
 }
+-(void)drawRect:(CGRect)rect{
+    [super drawRect:rect];
+    if (self.useCoreTextTool) {
+        self.vsc_inputAccessoryView = [[VscCoreTextTool alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 44)];
+        self.vsc_inputAccessoryView.allChooseStr = _allChooseStr;
+        self.vsc_inputAccessoryView.addLinkStr = _addLinkStr;
+    }
+}
+-(NSString *)allChooseStr{
+    if (!_allChooseStr) {
+        _allChooseStr = @"全选";
+    }
+    return _allChooseStr;
+}
+-(NSString *)addLinkStr{
+    if (!_addLinkStr) {
+        _addLinkStr = @"添加链接";
+    }
+    return _addLinkStr;
+}
 -(void)setVsc_inputAccessoryView:(VscCoreTextTool *)vsc_inputAccessoryView{
+    _vsc_inputAccessoryView = vsc_inputAccessoryView;
     self.inputAccessoryView = vsc_inputAccessoryView;
     vsc_inputAccessoryView.didClick = ^(ClickType type, BOOL isChosen, id others) {
         switch (type) {
@@ -62,11 +82,6 @@
         self.attributedText = attMu;
     }
 }
--(void)setUseCoreTextTool:(BOOL)useCoreTextTool{
-    if (useCoreTextTool) {
-        self.vsc_inputAccessoryView = [[VscCoreTextTool alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
-    }
-}
 -(NSMutableDictionary *)attributes{
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
 
@@ -77,7 +92,6 @@
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
     NSAttributedString *att = [[NSAttributedString alloc] initWithString:text attributes:[self attributes]];
     NSMutableAttributedString *attMu = textView.attributedText.mutableCopy;
-//    [attMu replaceCharactersInRange:NSMakeRange(range.location, text.length) withAttributedString:att];
     [attMu appendAttributedString:att];
     textView.attributedText = attMu.copy;
     return NO;

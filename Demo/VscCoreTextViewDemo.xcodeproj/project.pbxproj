@@ -19,6 +19,8 @@
 		7C3DE2881F3B0E2100ED76B8 /* VscCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2861F3B0E2100ED76B8 /* VscCoreTextView.m */; };
 		7C3DE28B1F3B100600ED76B8 /* CTV.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE28A1F3B100600ED76B8 /* CTV.bundle */; };
 		7C3DE28E1F3BFA7D00ED76B8 /* VscAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE28D1F3BFA7D00ED76B8 /* VscAttributes.m */; };
+		7C3DE2B01F3D6EF900ED76B8 /* BasicStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE2B21F3D6EF900ED76B8 /* BasicStrings.strings */; };
+		7C3DE2C71F4177BF00ED76B8 /* VscLocalizedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +47,7 @@
 		7C3DE2531F3B0B2800ED76B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7C3DE2551F3B0B2800ED76B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7C3DE2561F3B0B2800ED76B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7C3DE2591F3B0B2800ED76B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C3DE25B1F3B0B2800ED76B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C3DE25E1F3B0B2800ED76B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C3DE2601F3B0B2800ED76B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C3DE2651F3B0B2800ED76B8 /* VscCoreTextViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VscCoreTextViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3DE2691F3B0B2800ED76B8 /* VscCoreTextViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextViewDemoTests.m; sourceTree = "<group>"; };
@@ -62,6 +62,16 @@
 		7C3DE28A1F3B100600ED76B8 /* CTV.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CTV.bundle; sourceTree = "<group>"; };
 		7C3DE28C1F3BFA7D00ED76B8 /* VscAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscAttributes.h; sourceTree = "<group>"; };
 		7C3DE28D1F3BFA7D00ED76B8 /* VscAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscAttributes.m; sourceTree = "<group>"; };
+		7C3DE2951F3D68E500ED76B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C3DE2961F3D68E500ED76B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C3DE2A71F3D6C2C00ED76B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		7C3DE2A81F3D6C2C00ED76B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7C3DE2B11F3D6EF900ED76B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BasicStrings.strings; sourceTree = "<group>"; };
+		7C3DE2B31F3D6F1A00ED76B8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		7C3DE2B41F3D6F1A00ED76B8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		7C3DE2B51F3D6F1A00ED76B8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BasicStrings.strings"; sourceTree = "<group>"; };
+		7C3DE2C51F4177BF00ED76B8 /* VscLocalizedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscLocalizedHelper.h; sourceTree = "<group>"; };
+		7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscLocalizedHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,8 @@
 				7C3DE2531F3B0B2800ED76B8 /* AppDelegate.m */,
 				7C3DE2551F3B0B2800ED76B8 /* ViewController.h */,
 				7C3DE2561F3B0B2800ED76B8 /* ViewController.m */,
+				7C3DE2C51F4177BF00ED76B8 /* VscLocalizedHelper.h */,
+				7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */,
 				7C3DE2821F3B0E2100ED76B8 /* VscCoreTextView */,
 				7C3DE2581F3B0B2800ED76B8 /* Main.storyboard */,
 				7C3DE25B1F3B0B2800ED76B8 /* Assets.xcassets */,
@@ -130,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				7C3DE2501F3B0B2800ED76B8 /* main.m */,
+				7C3DE2B21F3D6EF900ED76B8 /* BasicStrings.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,8 +274,8 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 7C3DE2431F3B0B2800ED76B8;
 			productRefGroup = 7C3DE24D1F3B0B2800ED76B8 /* Products */;
@@ -282,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3DE25F1F3B0B2800ED76B8 /* LaunchScreen.storyboard in Resources */,
+				7C3DE2B01F3D6EF900ED76B8 /* BasicStrings.strings in Resources */,
 				7C3DE25C1F3B0B2800ED76B8 /* Assets.xcassets in Resources */,
 				7C3DE25A1F3B0B2800ED76B8 /* Main.storyboard in Resources */,
 				7C3DE28B1F3B100600ED76B8 /* CTV.bundle in Resources */,
@@ -311,6 +325,7 @@
 			files = (
 				7C3DE2571F3B0B2800ED76B8 /* ViewController.m in Sources */,
 				7C3DE2541F3B0B2800ED76B8 /* AppDelegate.m in Sources */,
+				7C3DE2C71F4177BF00ED76B8 /* VscLocalizedHelper.m in Sources */,
 				7C3DE2881F3B0E2100ED76B8 /* VscCoreTextView.m in Sources */,
 				7C3DE2511F3B0B2800ED76B8 /* main.m in Sources */,
 				7C3DE2871F3B0E2100ED76B8 /* VscCoreTextTool.m in Sources */,
@@ -353,7 +368,9 @@
 		7C3DE2581F3B0B2800ED76B8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C3DE2591F3B0B2800ED76B8 /* Base */,
+				7C3DE2951F3D68E500ED76B8 /* Base */,
+				7C3DE2A71F3D6C2C00ED76B8 /* en */,
+				7C3DE2B31F3D6F1A00ED76B8 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -361,9 +378,20 @@
 		7C3DE25D1F3B0B2800ED76B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7C3DE25E1F3B0B2800ED76B8 /* Base */,
+				7C3DE2961F3D68E500ED76B8 /* Base */,
+				7C3DE2A81F3D6C2C00ED76B8 /* en */,
+				7C3DE2B41F3D6F1A00ED76B8 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7C3DE2B21F3D6EF900ED76B8 /* BasicStrings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C3DE2B11F3D6EF900ED76B8 /* en */,
+				7C3DE2B51F3D6F1A00ED76B8 /* zh-Hans */,
+			);
+			name = BasicStrings.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -373,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -422,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -467,6 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2P42L39359;
 				INFOPLIST_FILE = VscCoreTextViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iLifeDiary.VscCoreTextViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -479,6 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2P42L39359;
 				INFOPLIST_FILE = VscCoreTextViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iLifeDiary.VscCoreTextViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

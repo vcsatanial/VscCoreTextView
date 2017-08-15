@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "VscCoreTextView.h"
+#import "VscLocalizedHelper.h"
 
 @interface ViewController ()
 
@@ -18,12 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    VscLocalizedHelper *helper2 = [VscLocalizedHelper sharedHelper];
+    [helper2 setBundleName:@"CTV.bundle" tableName:@"CurLanguage"];
+    helper2.rememberLang = YES;
+    helper2.curLanguage = @"zh-Hans-CN";
+    NSLog(@"%@",[helper2 allAppLanguages]);
+    
     VscCoreTextView *label = [[VscCoreTextView alloc] init];
     label.frame = CGRectMake(0, 40, 375, 300);
+    label.allChooseStr = localizedStr(@"全选");
+    label.addLinkStr = localizedStr(@"添加链接");
     label.useCoreTextTool = YES;
     label.font = [UIFont systemFontOfSize:15];
     [self.view addSubview:label];
-    
 }
 
 

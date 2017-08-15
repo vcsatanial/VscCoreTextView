@@ -18,6 +18,8 @@ typedef enum{
 }ClickType;
 typedef void(^ClickBlock)(ClickType type,BOOL isChosen,id others);
 @interface VscCoreTextTool : UIToolbar
+@property (nonatomic,copy) NSString *allChooseStr;
+@property (nonatomic,copy) NSString *addLinkStr;
 @property (nonatomic,copy) ClickBlock didClick;
 @property (nonatomic,copy) NSArray <UIColor *>*colors;//1.0暂不实现
 @end
