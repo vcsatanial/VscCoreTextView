@@ -15,12 +15,12 @@
 		7C3DE25F1F3B0B2800ED76B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE25D1F3B0B2800ED76B8 /* LaunchScreen.storyboard */; };
 		7C3DE26A1F3B0B2800ED76B8 /* VscCoreTextViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2691F3B0B2800ED76B8 /* VscCoreTextViewDemoTests.m */; };
 		7C3DE2751F3B0B2800ED76B8 /* VscCoreTextViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2741F3B0B2800ED76B8 /* VscCoreTextViewDemoUITests.m */; };
-		7C3DE2871F3B0E2100ED76B8 /* VscCoreTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2841F3B0E2100ED76B8 /* VscCoreTextTool.m */; };
-		7C3DE2881F3B0E2100ED76B8 /* VscCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2861F3B0E2100ED76B8 /* VscCoreTextView.m */; };
-		7C3DE28B1F3B100600ED76B8 /* CTV.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE28A1F3B100600ED76B8 /* CTV.bundle */; };
-		7C3DE28E1F3BFA7D00ED76B8 /* VscAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE28D1F3BFA7D00ED76B8 /* VscAttributes.m */; };
 		7C3DE2B01F3D6EF900ED76B8 /* BasicStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE2B21F3D6EF900ED76B8 /* BasicStrings.strings */; };
 		7C3DE2C71F4177BF00ED76B8 /* VscLocalizedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */; };
+		7C3DE2D11F42A52000ED76B8 /* CTV.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE2CA1F42A52000ED76B8 /* CTV.bundle */; };
+		7C3DE2D21F42A52000ED76B8 /* VscAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2CC1F42A52000ED76B8 /* VscAttributes.m */; };
+		7C3DE2D31F42A52000ED76B8 /* VscCoreTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2CE1F42A52000ED76B8 /* VscCoreTextTool.m */; };
+		7C3DE2D41F42A52000ED76B8 /* VscCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2D01F42A52000ED76B8 /* VscCoreTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,13 +55,6 @@
 		7C3DE2701F3B0B2800ED76B8 /* VscCoreTextViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VscCoreTextViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3DE2741F3B0B2800ED76B8 /* VscCoreTextViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextViewDemoUITests.m; sourceTree = "<group>"; };
 		7C3DE2761F3B0B2800ED76B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C3DE2831F3B0E2100ED76B8 /* VscCoreTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscCoreTextTool.h; sourceTree = "<group>"; };
-		7C3DE2841F3B0E2100ED76B8 /* VscCoreTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextTool.m; sourceTree = "<group>"; };
-		7C3DE2851F3B0E2100ED76B8 /* VscCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscCoreTextView.h; sourceTree = "<group>"; };
-		7C3DE2861F3B0E2100ED76B8 /* VscCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextView.m; sourceTree = "<group>"; };
-		7C3DE28A1F3B100600ED76B8 /* CTV.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CTV.bundle; sourceTree = "<group>"; };
-		7C3DE28C1F3BFA7D00ED76B8 /* VscAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscAttributes.h; sourceTree = "<group>"; };
-		7C3DE28D1F3BFA7D00ED76B8 /* VscAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscAttributes.m; sourceTree = "<group>"; };
 		7C3DE2951F3D68E500ED76B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C3DE2961F3D68E500ED76B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C3DE2A71F3D6C2C00ED76B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -72,6 +65,13 @@
 		7C3DE2B51F3D6F1A00ED76B8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BasicStrings.strings"; sourceTree = "<group>"; };
 		7C3DE2C51F4177BF00ED76B8 /* VscLocalizedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscLocalizedHelper.h; sourceTree = "<group>"; };
 		7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscLocalizedHelper.m; sourceTree = "<group>"; };
+		7C3DE2CA1F42A52000ED76B8 /* CTV.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CTV.bundle; sourceTree = "<group>"; };
+		7C3DE2CB1F42A52000ED76B8 /* VscAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscAttributes.h; sourceTree = "<group>"; };
+		7C3DE2CC1F42A52000ED76B8 /* VscAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscAttributes.m; sourceTree = "<group>"; };
+		7C3DE2CD1F42A52000ED76B8 /* VscCoreTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscCoreTextTool.h; sourceTree = "<group>"; };
+		7C3DE2CE1F42A52000ED76B8 /* VscCoreTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextTool.m; sourceTree = "<group>"; };
+		7C3DE2CF1F42A52000ED76B8 /* VscCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscCoreTextView.h; sourceTree = "<group>"; };
+		7C3DE2D01F42A52000ED76B8 /* VscCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 				7C3DE2561F3B0B2800ED76B8 /* ViewController.m */,
 				7C3DE2C51F4177BF00ED76B8 /* VscLocalizedHelper.h */,
 				7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */,
-				7C3DE2821F3B0E2100ED76B8 /* VscCoreTextView */,
+				7C3DE2C81F42A52000ED76B8 /* VscCoreTextView */,
 				7C3DE2581F3B0B2800ED76B8 /* Main.storyboard */,
 				7C3DE25B1F3B0B2800ED76B8 /* Assets.xcassets */,
 				7C3DE25D1F3B0B2800ED76B8 /* LaunchScreen.storyboard */,
@@ -165,24 +165,24 @@
 			path = VscCoreTextViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		7C3DE2821F3B0E2100ED76B8 /* VscCoreTextView */ = {
+		7C3DE2C81F42A52000ED76B8 /* VscCoreTextView */ = {
 			isa = PBXGroup;
 			children = (
-				7C3DE2831F3B0E2100ED76B8 /* VscCoreTextTool.h */,
-				7C3DE2841F3B0E2100ED76B8 /* VscCoreTextTool.m */,
-				7C3DE2851F3B0E2100ED76B8 /* VscCoreTextView.h */,
-				7C3DE2861F3B0E2100ED76B8 /* VscCoreTextView.m */,
-				7C3DE28C1F3BFA7D00ED76B8 /* VscAttributes.h */,
-				7C3DE28D1F3BFA7D00ED76B8 /* VscAttributes.m */,
-				7C3DE2891F3B0FD000ED76B8 /* Resource */,
+				7C3DE2C91F42A52000ED76B8 /* Resource */,
+				7C3DE2CB1F42A52000ED76B8 /* VscAttributes.h */,
+				7C3DE2CC1F42A52000ED76B8 /* VscAttributes.m */,
+				7C3DE2CD1F42A52000ED76B8 /* VscCoreTextTool.h */,
+				7C3DE2CE1F42A52000ED76B8 /* VscCoreTextTool.m */,
+				7C3DE2CF1F42A52000ED76B8 /* VscCoreTextView.h */,
+				7C3DE2D01F42A52000ED76B8 /* VscCoreTextView.m */,
 			);
 			path = VscCoreTextView;
 			sourceTree = "<group>";
 		};
-		7C3DE2891F3B0FD000ED76B8 /* Resource */ = {
+		7C3DE2C91F42A52000ED76B8 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				7C3DE28A1F3B100600ED76B8 /* CTV.bundle */,
+				7C3DE2CA1F42A52000ED76B8 /* CTV.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -295,10 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3DE25F1F3B0B2800ED76B8 /* LaunchScreen.storyboard in Resources */,
+				7C3DE2D11F42A52000ED76B8 /* CTV.bundle in Resources */,
 				7C3DE2B01F3D6EF900ED76B8 /* BasicStrings.strings in Resources */,
 				7C3DE25C1F3B0B2800ED76B8 /* Assets.xcassets in Resources */,
 				7C3DE25A1F3B0B2800ED76B8 /* Main.storyboard in Resources */,
-				7C3DE28B1F3B100600ED76B8 /* CTV.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,12 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3DE2571F3B0B2800ED76B8 /* ViewController.m in Sources */,
+				7C3DE2D41F42A52000ED76B8 /* VscCoreTextView.m in Sources */,
 				7C3DE2541F3B0B2800ED76B8 /* AppDelegate.m in Sources */,
 				7C3DE2C71F4177BF00ED76B8 /* VscLocalizedHelper.m in Sources */,
-				7C3DE2881F3B0E2100ED76B8 /* VscCoreTextView.m in Sources */,
+				7C3DE2D21F42A52000ED76B8 /* VscAttributes.m in Sources */,
+				7C3DE2D31F42A52000ED76B8 /* VscCoreTextTool.m in Sources */,
 				7C3DE2511F3B0B2800ED76B8 /* main.m in Sources */,
-				7C3DE2871F3B0E2100ED76B8 /* VscCoreTextTool.m in Sources */,
-				7C3DE28E1F3BFA7D00ED76B8 /* VscAttributes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
