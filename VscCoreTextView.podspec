@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'VscCoreTextView'
   spec.ios.deployment_target = '8.0'
-  spec.version          = '1.0.1'
+  spec.version          = '1.0.2'
   spec.summary          = '富文本输入框'
   spec.description      = <<-DESC
                        支持富文本输入的TextView
