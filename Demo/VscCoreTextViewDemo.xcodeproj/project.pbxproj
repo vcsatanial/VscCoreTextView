@@ -17,10 +17,10 @@
 		7C3DE2751F3B0B2800ED76B8 /* VscCoreTextViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2741F3B0B2800ED76B8 /* VscCoreTextViewDemoUITests.m */; };
 		7C3DE2B01F3D6EF900ED76B8 /* BasicStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE2B21F3D6EF900ED76B8 /* BasicStrings.strings */; };
 		7C3DE2C71F4177BF00ED76B8 /* VscLocalizedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */; };
-		7C3DE2D11F42A52000ED76B8 /* CTV.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE2CA1F42A52000ED76B8 /* CTV.bundle */; };
-		7C3DE2D21F42A52000ED76B8 /* VscAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2CC1F42A52000ED76B8 /* VscAttributes.m */; };
-		7C3DE2D31F42A52000ED76B8 /* VscCoreTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2CE1F42A52000ED76B8 /* VscCoreTextTool.m */; };
-		7C3DE2D41F42A52000ED76B8 /* VscCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE2D01F42A52000ED76B8 /* VscCoreTextView.m */; };
+		7C3DE3701F43F21500ED76B8 /* CTV.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C3DE3691F43F21500ED76B8 /* CTV.bundle */; };
+		7C3DE3711F43F21500ED76B8 /* VscAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE36B1F43F21500ED76B8 /* VscAttributes.m */; };
+		7C3DE3721F43F21500ED76B8 /* VscCoreTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE36D1F43F21500ED76B8 /* VscCoreTextTool.m */; };
+		7C3DE3731F43F21500ED76B8 /* VscCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DE36F1F43F21500ED76B8 /* VscCoreTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,13 +65,13 @@
 		7C3DE2B51F3D6F1A00ED76B8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BasicStrings.strings"; sourceTree = "<group>"; };
 		7C3DE2C51F4177BF00ED76B8 /* VscLocalizedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscLocalizedHelper.h; sourceTree = "<group>"; };
 		7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscLocalizedHelper.m; sourceTree = "<group>"; };
-		7C3DE2CA1F42A52000ED76B8 /* CTV.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CTV.bundle; sourceTree = "<group>"; };
-		7C3DE2CB1F42A52000ED76B8 /* VscAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscAttributes.h; sourceTree = "<group>"; };
-		7C3DE2CC1F42A52000ED76B8 /* VscAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscAttributes.m; sourceTree = "<group>"; };
-		7C3DE2CD1F42A52000ED76B8 /* VscCoreTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscCoreTextTool.h; sourceTree = "<group>"; };
-		7C3DE2CE1F42A52000ED76B8 /* VscCoreTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextTool.m; sourceTree = "<group>"; };
-		7C3DE2CF1F42A52000ED76B8 /* VscCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscCoreTextView.h; sourceTree = "<group>"; };
-		7C3DE2D01F42A52000ED76B8 /* VscCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextView.m; sourceTree = "<group>"; };
+		7C3DE3691F43F21500ED76B8 /* CTV.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CTV.bundle; sourceTree = "<group>"; };
+		7C3DE36A1F43F21500ED76B8 /* VscAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscAttributes.h; sourceTree = "<group>"; };
+		7C3DE36B1F43F21500ED76B8 /* VscAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscAttributes.m; sourceTree = "<group>"; };
+		7C3DE36C1F43F21500ED76B8 /* VscCoreTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscCoreTextTool.h; sourceTree = "<group>"; };
+		7C3DE36D1F43F21500ED76B8 /* VscCoreTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextTool.m; sourceTree = "<group>"; };
+		7C3DE36E1F43F21500ED76B8 /* VscCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VscCoreTextView.h; sourceTree = "<group>"; };
+		7C3DE36F1F43F21500ED76B8 /* VscCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VscCoreTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 				7C3DE2561F3B0B2800ED76B8 /* ViewController.m */,
 				7C3DE2C51F4177BF00ED76B8 /* VscLocalizedHelper.h */,
 				7C3DE2C61F4177BF00ED76B8 /* VscLocalizedHelper.m */,
-				7C3DE2C81F42A52000ED76B8 /* VscCoreTextView */,
+				7C3DE3671F43F21500ED76B8 /* VscCoreTextView */,
 				7C3DE2581F3B0B2800ED76B8 /* Main.storyboard */,
 				7C3DE25B1F3B0B2800ED76B8 /* Assets.xcassets */,
 				7C3DE25D1F3B0B2800ED76B8 /* LaunchScreen.storyboard */,
@@ -165,24 +165,25 @@
 			path = VscCoreTextViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		7C3DE2C81F42A52000ED76B8 /* VscCoreTextView */ = {
+		7C3DE3671F43F21500ED76B8 /* VscCoreTextView */ = {
 			isa = PBXGroup;
 			children = (
-				7C3DE2C91F42A52000ED76B8 /* Resource */,
-				7C3DE2CB1F42A52000ED76B8 /* VscAttributes.h */,
-				7C3DE2CC1F42A52000ED76B8 /* VscAttributes.m */,
-				7C3DE2CD1F42A52000ED76B8 /* VscCoreTextTool.h */,
-				7C3DE2CE1F42A52000ED76B8 /* VscCoreTextTool.m */,
-				7C3DE2CF1F42A52000ED76B8 /* VscCoreTextView.h */,
-				7C3DE2D01F42A52000ED76B8 /* VscCoreTextView.m */,
+				7C3DE3681F43F21500ED76B8 /* Resource */,
+				7C3DE36A1F43F21500ED76B8 /* VscAttributes.h */,
+				7C3DE36B1F43F21500ED76B8 /* VscAttributes.m */,
+				7C3DE36C1F43F21500ED76B8 /* VscCoreTextTool.h */,
+				7C3DE36D1F43F21500ED76B8 /* VscCoreTextTool.m */,
+				7C3DE36E1F43F21500ED76B8 /* VscCoreTextView.h */,
+				7C3DE36F1F43F21500ED76B8 /* VscCoreTextView.m */,
 			);
-			path = VscCoreTextView;
+			name = VscCoreTextView;
+			path = ../../VscCoreTextView;
 			sourceTree = "<group>";
 		};
-		7C3DE2C91F42A52000ED76B8 /* Resource */ = {
+		7C3DE3681F43F21500ED76B8 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				7C3DE2CA1F42A52000ED76B8 /* CTV.bundle */,
+				7C3DE3691F43F21500ED76B8 /* CTV.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -295,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3DE25F1F3B0B2800ED76B8 /* LaunchScreen.storyboard in Resources */,
-				7C3DE2D11F42A52000ED76B8 /* CTV.bundle in Resources */,
+				7C3DE3701F43F21500ED76B8 /* CTV.bundle in Resources */,
 				7C3DE2B01F3D6EF900ED76B8 /* BasicStrings.strings in Resources */,
 				7C3DE25C1F3B0B2800ED76B8 /* Assets.xcassets in Resources */,
 				7C3DE25A1F3B0B2800ED76B8 /* Main.storyboard in Resources */,
@@ -324,11 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C3DE2571F3B0B2800ED76B8 /* ViewController.m in Sources */,
-				7C3DE2D41F42A52000ED76B8 /* VscCoreTextView.m in Sources */,
+				7C3DE3731F43F21500ED76B8 /* VscCoreTextView.m in Sources */,
 				7C3DE2541F3B0B2800ED76B8 /* AppDelegate.m in Sources */,
 				7C3DE2C71F4177BF00ED76B8 /* VscLocalizedHelper.m in Sources */,
-				7C3DE2D21F42A52000ED76B8 /* VscAttributes.m in Sources */,
-				7C3DE2D31F42A52000ED76B8 /* VscCoreTextTool.m in Sources */,
+				7C3DE3711F43F21500ED76B8 /* VscAttributes.m in Sources */,
+				7C3DE3721F43F21500ED76B8 /* VscCoreTextTool.m in Sources */,
 				7C3DE2511F3B0B2800ED76B8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
