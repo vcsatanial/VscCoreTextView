@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'VscCoreTextView'
   spec.ios.deployment_target = '8.0'
-  spec.version          = '1.0.2'
+  spec.version          = '1.0.4'
   spec.summary          = '富文本输入框'
   spec.description      = <<-DESC
                        支持富文本输入的TextView
@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
   spec.source           = { :git => 'https://github.com/vcsatanial/VscCoreTextView.git', :tag => spec.version }
   
   spec.source_files = 'VscCoreTextView/*.{h,m}'
-  spec.resource = 'VscCoreTextView/Resource'
+  spec.resource = 'VscCoreTextView/‘
   spec.requires_arc = true
 end
