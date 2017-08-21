@@ -12,5 +12,6 @@ Pod::Spec.new do |spec|
   spec.source           = { :git => 'https://github.com/vcsatanial/VscCoreTextView.git', :tag => spec.version }
   
   spec.source_files = 'VscCoreTextView/*.{h,m}'
+  spec.resource = 'VscCoreTextView/Resource'
   spec.requires_arc = true
 end
