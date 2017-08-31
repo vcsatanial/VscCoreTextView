@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+
+typedef void(^addLink)();
+
 @interface VscCoreTextView : UITextView
 @property (nonatomic,assign) BOOL useCoreTextTool;
 @property (nonatomic,copy) NSString *allChooseStr;
 @property (nonatomic,copy) NSString *addLinkStr;
+@property (nonatomic,copy) NSString *maxCountStr;
+@property (nonatomic,copy) addLink didClickAddLink;
+@property (nonatomic,assign) NSUInteger maxCount;
 @end

@@ -27,9 +27,11 @@
     NSLog(@"%@",[helper2 allAppLanguages]);
     
     VscCoreTextView *label = [[VscCoreTextView alloc] init];
+    label.maxCount = 5;
     label.frame = CGRectMake(0, 40, 375, 300);
     label.allChooseStr = localizedStr(@"全选");
     label.addLinkStr = localizedStr(@"添加链接");
+    label.maxCountStr = @"不多余4000字";
     label.useCoreTextTool = YES;
     label.font = [UIFont systemFontOfSize:15];
     [self.view addSubview:label];

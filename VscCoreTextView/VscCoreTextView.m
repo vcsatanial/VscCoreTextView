@@ -16,6 +16,7 @@
 @property (nonatomic,assign) CGFloat curFontSize;
 @property (nonatomic,strong) UIFont *curFont;
 @property (nonatomic,assign) BOOL curIsBold;
+@property (nonatomic,strong) UILabel *placeHolderLabel;
 @end
 
 @implementation VscCoreTextView
@@ -26,6 +27,17 @@
     }
     return self;
 }
+-(instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame:frame]) {
+        self.delegate = self;
+        _curFontSize = 15;
+    }
+    return self;
+}
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    [self addSubview:self.placeHolderLabel];
+}
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
     if (self.useCoreTextTool) {
@@ -33,6 +45,14 @@
         self.vsc_inputAccessoryView.allChooseStr = _allChooseStr;
         self.vsc_inputAccessoryView.addLinkStr = _addLinkStr;
     }
+}
+-(UILabel *)placeHolderLabel{
+    if (!_placeHolderLabel) {
+        _placeHolderLabel = [[UILabel alloc] initWithFrame:CGRectMake(16, 4, self.frame.size.width - 32, 24)];
+        _placeHolderLabel.text = self.maxCountStr;
+        _placeHolderLabel.textColor = [UIColor colorWithRed:166.f/255.f green:166.f/255.f blue:166.f/255.f alpha:1];
+    }
+    return _placeHolderLabel;
 }
 -(NSString *)allChooseStr{
     if (!_allChooseStr) {
@@ -63,6 +83,9 @@
                 [self resetFont];
                 break;
             case ClickAddLink:
+                if (self.didClickAddLink) {
+                    self.didClickAddLink();
+                }
                 break;
             default:
                 break;
@@ -90,10 +113,27 @@
     return dic;
 }
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+    if ([text isEqualToString:@""]) {
+        return YES;
+    }
+    self.placeHolderLabel.hidden = YES;
+    if (text.length != 0 && textView.attributedText.length >= _maxCount) {
+        return NO;
+    }
+    if (textView.attributedText.length + text.length >= _maxCount) {
+        text = [text substringToIndex:(_maxCount - textView.attributedText.length)];
+    }
     NSAttributedString *att = [[NSAttributedString alloc] initWithString:text attributes:[self attributes]];
     NSMutableAttributedString *attMu = textView.attributedText.mutableCopy;
     [attMu appendAttributedString:att];
     textView.attributedText = attMu.copy;
     return NO;
+}
+-(void)textViewDidChange:(UITextView *)textView{
+    if (!textView.text.length) {
+        self.placeHolderLabel.hidden = NO;
+    }else{
+        self.placeHolderLabel.hidden = YES;
+    }
 }
 @end
