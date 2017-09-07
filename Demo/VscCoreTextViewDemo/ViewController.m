@@ -27,7 +27,7 @@
     NSLog(@"%@",[helper2 allAppLanguages]);
     
     VscCoreTextView *label = [[VscCoreTextView alloc] init];
-    label.maxCount = 5;
+    label.maxCount = 150;
     label.frame = CGRectMake(0, 40, 375, 300);
     label.allChooseStr = localizedStr(@"全选");
     label.addLinkStr = localizedStr(@"添加链接");

@@ -34,8 +34,17 @@
     }
     return self;
 }
+-(void)setAttributedText:(NSAttributedString *)attributedText{
+    if (attributedText.length != 0) {
+        self.placeHolderLabel.hidden = YES;
+    }else{
+        self.placeHolderLabel.hidden = NO;
+    }
+    [super setAttributedText:attributedText];
+}
 -(void)layoutSubviews{
     [super layoutSubviews];
+    self.autocorrectionType = UITextAutocorrectionTypeNo;
     [self addSubview:self.placeHolderLabel];
 }
 -(void)drawRect:(CGRect)rect{
