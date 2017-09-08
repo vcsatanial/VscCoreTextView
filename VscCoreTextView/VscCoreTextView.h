@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VscCoreTextTool.h"
 
 typedef void(^addLink)();
+typedef void(^overMaxCount)();
 
 @interface VscCoreTextView : UITextView
 @property (nonatomic,assign) BOOL useCoreTextTool;
@@ -16,5 +18,7 @@ typedef void(^addLink)();
 @property (nonatomic,copy) NSString *addLinkStr;
 @property (nonatomic,copy) NSString *maxCountStr;
 @property (nonatomic,copy) addLink didClickAddLink;
+@property (nonatomic,copy) overMaxCount overMax;
 @property (nonatomic,assign) NSUInteger maxCount;
+@property (nonatomic,assign) addButtonType addTypes;
 @end

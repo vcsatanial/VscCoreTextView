@@ -15,6 +15,7 @@
     BOOL isBigger;
     BOOL isAddedLink;
     UIColor *color;
+    NSArray *numArray;
     
     UIImage *bold_norImg;
     UIImage *bold_selImg;
@@ -210,11 +211,37 @@
 }
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    [self.itemsArray addObject:self.allChooseItem];
-    [self.itemsArray addObject:self.boldItem];
-    [self.itemsArray addObject:self.biggerItem];
-    [self.itemsArray addObject:self.flexibleItem];
-    [self.itemsArray addObject:self.addLinkItem];
+    if (_addTypes & ButtonAll) {
+        [self.itemsArray addObject:self.allChooseItem];
+    }
+    if (_addTypes & ButtonBold) {
+        [self.itemsArray addObject:self.boldItem];
+    }
+    if (_addTypes & ButtonItalic) {
+        [self.itemsArray addObject:self.italicItem];
+    }
+    if (_addTypes & ButtonUnderline) {
+        [self.itemsArray addObject:self.underlineItem];
+    }
+    if (_addTypes & ButtonBigger) {
+        [self.itemsArray addObject:self.biggerItem];
+    }
+    if (_addTypes & ButtonColor) {
+        [self.itemsArray addObject:self.colorItem];
+    }
+    if (_addTypes & ButtonAddLink) {
+        [self.itemsArray addObject:self.flexibleItem];
+        [self.itemsArray addObject:self.addLinkItem];
+    }
     self.items = self.itemsArray.copy;
+}
+-(void)clearType{
+    for (UIView *subView in self.subviews) {
+        if ([subView isKindOfClass:[UIButton class]]) {
+            if (((UIButton *)subView).selected) {
+                [self buttonClick:(UIButton *)subView];
+            }
+        }
+    }
 }
 @end
