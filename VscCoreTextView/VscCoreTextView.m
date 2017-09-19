@@ -131,6 +131,9 @@
 }
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
     tempText = text;
+    if (tempText.length > _maxCount) {
+        tempText = [tempText substringToIndex:_maxCount];
+    }
     if (text.length != 0) {
         self.placeHolderLabel.hidden = YES;
     }
@@ -150,13 +153,14 @@
             if (self.overMax) {
                 self.overMax();
             }
+        }else{
+            NSInteger curLoc = self.selectedRange.location;
+            NSMutableAttributedString *muAttributedStr = textView.attributedText.mutableCopy;
+            NSAttributedString *newAttributedStr = [[NSAttributedString alloc] initWithString:tempText attributes:[self attributes]];
+            [muAttributedStr replaceCharactersInRange:NSMakeRange(curLoc - newAttributedStr.length, newAttributedStr.length) withAttributedString:newAttributedStr];
+            self.attributedText = muAttributedStr.copy;
+            self.selectedRange = NSMakeRange(curLoc, 0);
         }
-        NSInteger curLoc = self.selectedRange.location;
-        NSMutableAttributedString *muAttributedStr = textView.attributedText.mutableCopy;
-        NSAttributedString *newAttributedStr = [[NSAttributedString alloc] initWithString:tempText attributes:[self attributes]];
-        [muAttributedStr replaceCharactersInRange:NSMakeRange(curLoc - newAttributedStr.length, newAttributedStr.length) withAttributedString:newAttributedStr];
-        self.attributedText = muAttributedStr.copy;
-        self.selectedRange = NSMakeRange(curLoc, 0);
     }
 }
 @end
